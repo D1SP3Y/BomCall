@@ -1,2 +1,5 @@
 # BomCall
-No Desc
+SCRIPT :
+~$ pkg install python
+~$ pkg install git
+~$ pip install requests
